@@ -9,7 +9,7 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
-#top {
+/*#top {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -160,4 +160,257 @@ html, body {
   background-color: #304672;
   color: #fff;
   border-radius: 50%;
+}*/
+
+/*-------------FOR DESKTOP--------------------*/
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+/* CSS STYLING FOR TOP BAR */
+#top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 7vh;
+}
+#top .time-bar {
+  align-self: left;
+  width: 80%;
+  height: 3px;
+  background-color: #738EC6;
+  margin-bottom: 5px;
+}
+#top .top-bar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+}
+#top .top-bar .time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  font-weight: bold;
+  background: #738EC6;
+  padding: 4px;
+  border-radius: 2px;
+}
+#top .top-bar .title {
+  align-self: center;
+  font-size: 3.2vh;
+  font-weight: bold;
+}
+#top .top-bar .quit {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.5vh;
+  font-weight: bold;
+  cursor: pointer;
+  background: #E74D4D;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+/* CSS STYLING FOR QUESTION TYPE DISPLAY*/
+.question-type-display {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.2vh;
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-left: -22vw;
+  width: 75%;
+  height: 6vh;
+  background: #738EC6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 2vh;
+}
+.information {
+  margin-left: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 32vw;
+}
+
+/* CSS STYLING FOR QUESTION WINDOW AND QUESTION NUMBER*/
+.question-window-wrapper {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  height: 80%;
+}
+
+#container {
+  width: 75%;
+  margin-bottom: 2vh;
+  /*box-sizing: border-box;*/
+  text-align: justify;
+}
+#bottom {
+  display: none;
+}
+
+
+.question::before {
+  content: 'Q. ';
+  font-size: 1.5em;
+  font-weight: bolder;
+  color: #7DA7FC;
+}
+
+.question {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 4vh;
+  margin-top: 2vh;
+}
+
+.question-container {
+  background: #738EC6;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 65vh;
+  margin-top: 6vh;
+  margin-right: -42vw;
+  margin-left: 4vw;
+}
+
+.options {
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.options span {
+  display: block;
+  width: 86%;
+  height: 2vh;
+  padding: 10px 0 10px 0;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 6px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+.cross {
+  display: none;
+}
+#ques-list .ques-nums {
+  width: 50%;
+  display: flex;
+/*  flex-direction: column;*/
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  flex-wrap: wrap;
+}
+#ques-list .ques-nums span {
+  cursor: pointer;
+  padding: 0px;
+  font-size: 18px;
+  height: 20px;
+  width: 20px;
+  margin: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #304672;
+  color: #fff;
+  border-radius: 50%;
+}
+
+/* CSS STYLING FOR NEXT AND BACK*/
+
+.other-options {
+  width: 96%;
+  height: 7vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3vh;
+  font-weight: bold;
+  /*clear: both;*/
+}
+.back:hover {
+  cursor: pointer;
+  color: #7DA7FC;
+}
+.save:hover {
+  cursor: pointer;
+  color: #7DA7FC;
+}
+.skip {
+  padding-right: 27vw;
+  cursor: pointer;
+}
+.skip:hover {
+  color: #7DA7FC;
+}
+.current {
+  font-size: 2.5vh;
+  width: 9vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.current-color {
+  background: #fff;
+  height: 3vh;
+  width: 3vh;
+}
+.attempted {
+  font-size: 2.5vh;
+  width: 10.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.attempted-color {
+  background: #fff;
+  height: 3vh;
+  width: 3vh;
+}
+
+.visited {
+  font-size: 2.5vh;
+  width: 7.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.visited-color {
+  background: #fff;
+  height: 3vh;
+  width: 3vh;
+}
+
+.unvisited {
+  font-size: 2.5vh;
+  width: 9.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.unvisited-color {
+  background: #fff;
+  height: 3vh;
+  width: 3vh;
 }
