@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+html,body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #000;
+	color: #fff;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+}
+/*-----------------CSS STYLING FOR THE TOP-BAR---------------*/
+.top-bar {
+	width: 100%;
+	height: 8vh;
+	background: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.time-display {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vh;
+	font-weight: bold;
+	background-color: #738EC6;
+	height: 5vh;
+	width: 5%;
+	text-align: center;
+	border: black solid 3px;
+	line-height: 5vh;
+	border-radius: 2vh;
+	margin-right: 29vw;
+}
+.rev-engg-display {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vh;
+	font-weight: bold;
+}
+.quit-display {
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vh;
+	font-weight: bold;
+	cursor: pointer;
+  	background: #E74D4D;
+  	height: 5vh;
+  	width: 5%;
+  	text-align: center;
+	line-height: 5vh;
+	border: black solid 3px;
+	border-radius: 2vh;
+	margin-left: 29vw;
+}
+
+/* CSS STYLING FOR QUESTION TYPE DISPLAY */
+
+.question-type-display {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.2vh;
+	font-weight: bold;
+	margin-top: 3vh;
+	margin-left: 2vw;
+	width: 70%;
+	height: 6vh;
+	background: #738EC6;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 2vh;
+}
+.information {
+	margin-left: 15vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 32vw;
+}
+
+/* CSS STYLING FOR QUESTION WINDOW DISPLAY */
+.question-window-wrapper {
+	font-family: 'Roboto', sans-serif;
+	font-size: 2.5vh;
+	font-weight: bold;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.question-display-window {
+	width: 68%;
+	height: 76vh;
+	/*margin-left: 2vw;*/
+	background: #000;
+}
+.q {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4vh;
+	font-weight: bold;
+	margin-right: 2vh;
+	height: 90vh;
+	color: #7DA7FC;
+}
+.question-display {
+	margin-right: 6vh;
+}
+.option {
+	display: block;
+	margin-left: 1vh;
+}
+
+
+/* CSS STYLING FOR QUESTION NO. DISPLAY*/
+.question-no-display {
+	background: #738EC6;
+	border-radius: 3%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 20%;
+	height: 75vh;
+	margin-top: -13.5vh;
+}
+.question-no-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.aptitude {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.aptitude-questions {
+	margin-right: 2vh;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 4vh;
+	height: 4vh;
+	background: #304672;
+}
+.automobile {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.automobile-questions {
+	margin-right: 2vh;
+	cursor: pointer;
+	width: 4vh;
+	height: 4vh;
+	background: #304672;
+	border-radius: 50%;
+	text-align: center;
+}
+.mechanical {
+	height: 7vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.mechanical-questions {
+	margin-right: 2vh;
+	cursor: pointer;
+	width: 4vh;
+	height: 4vh;
+	border-radius: 50%;
+	background: #304672;
+	text-align: center;
+}
+.miscellaneous {
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.miscellaneous-questions {
+	cursor: pointer;
+	width: 4vh;
+	height: 4vh;
+	border-radius: 50%;
+	background: #304672;
+	text-align: center;
+}
+/* CSS STYLING FOR BACK AND NEXT */
+.other-options {
+	width: 100%;
+	height: 7vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 3vh;
+	font-weight: bold;
+	/*clear: both;*/
+}
+.back:hover {
+	cursor: pointer;
+	color: #7DA7FC;
+}
+.save:hover {
+	cursor: pointer;
+	color: #7DA7FC;
+}
+.skip {
+	padding-right: 27vw;
+	cursor: pointer;
+}
+.skip:hover {
+	color: #7DA7FC;
+}
+.current {
+	width: 10vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.current-color {
+	background: #fff;
+	height: 3vh;
+	width: 3vh;
+}
+
+.attempted {
+	width: 12vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.attempted-color {
+	background: #fff;
+	height: 3vh;
+	width: 3vh;
+}
+
+.visited {
+	width: 8.5vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.visited-color {
+	background: #fff;
+	height: 3vh;
+	width: 3vh;
+}
+
+.unvisited {
+	width: 10.8vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.unvisited-color {
+	background: #fff;
+	height: 3vh;
+	width: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
