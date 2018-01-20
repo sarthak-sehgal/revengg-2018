@@ -3,6 +3,20 @@ function init()
   var list = document.getElementById('ques-list');
   var list_icon = document.getElementsByClassName('list-icon')[0];
   var close_list = document.getElementsByClassName('cross')[0];
+  var dont_quit = document.getElementsByClassName('dont-quit')[0];
+  var yes_quit = document.getElementsByClassName('yes-quit')[0];
+  var quit = document.getElementsByClassName('quit')[0];
+  var overlay = document.getElementById('overlay');
+
+  quit.onclick = function() {
+  	overlay.style.display = 'flex';
+  };
+  dont_quit.onclick = function() {
+  	overlay.style.display = 'none';
+  };
+  yes_quit.onclick = function() {
+  	location.reload();
+  }
 
   list_icon.onclick = function() {
     list.style.top = 0;

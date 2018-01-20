@@ -9,6 +9,31 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
+#overlay {
+  z-index: 9999;
+  position: absolute;
+  background: rgba(0,0,0,0.8);
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+.dont-quit, .yes-quit {
+  padding: 5px 10px 5px 10px;
+  border-radius: 3px;
+  margin: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.dont-quit {
+  background: #738EC6;
+}
+.yes-quit {
+  background: #E74D4D;
+}
 #top {
   width: 100%;
   display: flex;
