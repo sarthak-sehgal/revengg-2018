@@ -192,7 +192,7 @@ html, body {
   color: #fff;
   border-radius: 50%;
 }
-#prev-next {
+.prev-next {
   display: none;
 }
 
