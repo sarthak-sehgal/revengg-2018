@@ -100,14 +100,35 @@ html, body {
   text-align: center;
   margin-bottom: 50px;
 }
-.options span {
+.options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.options ul li {
   display: block;
+}
+.options input {
+  display: none;
+}
+.options label {
+  cursor: pointer;
+  display: block;
+  color: #fff;
   width: 100%;
   padding: 10px 0 10px 0;
   background-color: #fff;
   color: #000;
   margin-bottom: 10px;
   border-radius: 10px;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+.options input:checked + label {
+  background: #738EC6;
+  color: #fff;
 }
 #bottom {
   position: fixed;
@@ -196,6 +217,23 @@ html, body {
   display: none;
 }
 
+.reset_btn {
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.skip {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  background: #304672;
+  padding: 10px 20px 10px 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 @media only screen and (min-device-width: 700px) {
   #top {
     align-self: left;
@@ -212,16 +250,22 @@ html, body {
   #container .options {
     align-self: center;
   }
-  #container .options span {
+  /*#container .options input {
+    visibility: hidden;
+  }
+  #container .options label {
     cursor: pointer;
     -webkit-transition: 0.5s all ease-in-out;
     -moz-transition: 0.5s all ease-in-out;
     -o-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
   }
-  #container .options span:hover {
+  #container .options label:hover {
     background-color: #efefef;
   }
+  #container .options label:selected {
+    background-color: #000;
+  }*/
   #ques-list {
     position: fixed;
     right: 0;
@@ -251,5 +295,8 @@ html, body {
   }
   #ques-list .cross {
     display: none;
+  }
+  .reset_btn {
+    margin-bottom: 15px;
   }
 }

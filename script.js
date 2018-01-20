@@ -7,6 +7,22 @@ function init()
   var yes_quit = document.getElementsByClassName('yes-quit')[0];
   var quit = document.getElementsByClassName('quit')[0];
   var overlay = document.getElementById('overlay');
+  var options = document.getElementsByClassName('options')[0].getElementsByTagName('input');
+  var skip = document.getElementsByClassName('skip')[0];
+
+  //on option click
+  for(i=0; i<options.length; i++)
+  {
+  	options[i].checked=false;
+  }
+
+  // on skip click
+  skip.onclick = function() {
+  	for(i=0; i<options.length; i++)
+	{
+		options[i].checked=false;
+	}
+  };
 
   quit.onclick = function() {
   	overlay.style.display = 'flex';
