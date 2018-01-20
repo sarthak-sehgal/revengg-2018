@@ -18,10 +18,14 @@ html, body {
 }
 #top .time-bar {
   align-self: left;
-  width: 80%;
+  width: 0%;
   height: 3px;
   background-color: #738EC6;
   margin-bottom: 5px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 #top .top-bar {
   width: 90%;
@@ -118,13 +122,15 @@ html, body {
   padding-top: 10px;
   position: fixed;
   top: 100%;
-  left: 0;
   min-height: 100%;
   width: 100%;
   background-color: #566A93;
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-transition: 0.25s all cubic-bezier(0.71, 0.04, 0.1, 0.93);
+  -moz-transition: 0.25s all cubic-bezier(0.71, 0.04, 0.1, 0.93);
+  -o-transition: 0.25s all cubic-bezier(0.71, 0.04, 0.1, 0.93);
   transition: 0.25s all cubic-bezier(0.71, 0.04, 0.1, 0.93);
 }
 #ques-list .cross {
@@ -160,4 +166,65 @@ html, body {
   background-color: #304672;
   color: #fff;
   border-radius: 50%;
+}
+#prev-next {
+  display: none;
+}
+
+@media only screen and (min-device-width: 700px) {
+  #top {
+    align-self: left;
+    width: 75%;
+  }
+  #bottom {
+    display: none;
+  }
+  #container {
+    align-self: left;
+    width: 70%;
+    margin-left: 2.5%;
+  }
+  #container .options {
+    align-self: center;
+  }
+  #container .options span {
+    cursor: pointer;
+    -webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    -o-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+  }
+  #container .options span:hover {
+    background-color: #efefef;
+  }
+  #ques-list {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+  }
+  #ques-list .ques-nums {
+    width: 80%;
+  }
+  .prev-next {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  .prev {
+    background: #738EC6;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .next {
+    background: #4C5D80;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #ques-list .cross {
+    display: none;
+  }
 }
