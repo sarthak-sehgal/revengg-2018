@@ -109,6 +109,8 @@ body {
 }
 .question-display {
 	margin-right: 6vh;
+	text-align: justify;
+
 }
 .option {
 	display: block;
@@ -154,6 +156,7 @@ body {
 	background: #304672;
 }
 .automobile {
+	padding: 1vh;
 	height: 10vh;
 	display: flex;
 	flex-direction: row;
@@ -188,6 +191,7 @@ body {
 	text-align: center;
 }
 .miscellaneous {
+	padding: 1vh;
 	height: 10vh;
 	display: flex;
 	flex-direction: row;
@@ -206,7 +210,7 @@ body {
 /* CSS STYLING FOR BACK AND NEXT */
 .other-options {
 	width: 100%;
-	height: 7vh;
+	height: 5vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -225,8 +229,9 @@ body {
 	color: #7DA7FC;
 }
 .skip {
-	padding-right: 27vw;
+	/*padding-right: 27vw;*/
 	cursor: pointer;
+	margin-right: 22vw;
 }
 .skip:hover {
 	color: #7DA7FC;
@@ -278,6 +283,150 @@ body {
 	height: 3vh;
 	width: 3vh;
 }
+
+/* ========= Adding media queries =============*/
+
+@media all and (max-width: 1148px) {
+	
+	.current {
+		width: 7vw;
+		margin-right: -16vh;
+	}
+
+	.attempted {
+		width: 8vw;
+		margin-right: -17vh;
+	}
+	.visited {
+		width: 5.5vw;
+		margin-right: -17vh;
+	}
+	.unvisited {
+		width: 7vw;
+	}
+	.question-no-display {
+		height: 79vh;
+		margin-top: -9vh;
+		overflow: scroll;
+	}
+	.question-no-wrapper {
+		margin-top: -4vh;
+		padding: 2vh;
+	}
+	.aptitude-questions {
+		padding: 1vh;
+		margin-left: 1.5vh;
+		margin-top: 1vh;
+		/*margin-right: 3vh;*/
+	}
+	.automobile-questions {
+		padding: 1vh;
+		margin-left: 1vh;
+		margin-top: 1vh;
+		/*margin-right: 2vh;*/
+	}
+	.mechanical-questions {
+		padding: 1vh;
+		/*margin-right: 2.2vh;*/
+		margin-top: 1vh;
+		margin-left: 1vh;
+	}
+
+	.miscellaneous-questions {
+		padding: 1vh;
+		/*margin-right: 2vh;*/
+		margin-top: 1vh;
+		margin-left: 3vh;
+	}
+	
+
+}
+
+@media all and (max-width: 985px) {
+	.attempted {
+		width: 8.5vw;
+	}
+	.visited {
+		width: 6vw;
+	}
+	.unvisited {
+		width: 7.5vw;
+	}
+	.aptitude-questions {
+		padding: 1vh;
+		margin-left: 0.2vh;
+		margin-top: 1vh;
+		/*margin-right: 3vh;*/
+	}
+	.automobile-questions {
+		padding: 1vh;
+		margin-left: -0.2vh;
+		margin-top: 1vh;
+		/*margin-right: 2vh;*/
+	}
+	.mechanical-questions {
+		padding: 1vh;
+		/*margin-right: 2.2vh;*/
+		margin-top: 1vh;
+		margin-left: 0.2vh;
+	}
+	.miscellaneous-questions {
+		padding: 1vh;
+		/*margin-right: 2vh;*/
+		margin-top: 1vh;
+		margin-left: 1.7vh;
+	}
+	
+}
+@media all and (max-width: 861px) {
+	.current {
+		width: 8vw;
+		margin-right: -7vh;
+	}
+	.attempted {
+		width: 9.5vw;
+		margin-right: -9vh;
+	}
+	.visited {
+		width: 6.5vw;
+		margin-right: -9vh;
+	}
+	.unvisited {
+		width: 8.5vw;
+		margin-right: -4vh;
+	}
+	.aptitude-questions {
+		padding: 1vh;
+		margin-left: -1vh;
+		margin-top: 1vh;
+		/*margin-right: 3vh;*/
+	}
+	.automobile-questions {
+		padding: 1vh;
+		margin-left: -1.2vh;
+		margin-top: 1vh;
+		/*margin-right: 2vh;*/
+	}
+	.mechanical-questions {
+		padding: 1vh;
+		/*margin-right: 2.2vh;*/
+		margin-top: 1vh;
+		margin-left: -1vh;
+	}
+	.miscellaneous-questions {
+		padding: 1vh;
+		/*margin-right: 2vh;*/
+		margin-top: 1vh;
+		margin-left: 1.5vh;
+	}
+}
+
+
+
+
+
+
+
 
 
 
