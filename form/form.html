@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>form</title>
 	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
@@ -11,13 +12,19 @@
 		<div class="heading">Please enter your details</div>
 		<form id="details" action="/Users/apple/Desktop/github/revengg-2018/index.html">
 			<div class="container">
-				<input type="text" name="" id="submit_name" placeholder="TEAM LEADER" required>
+				<label>TEAM LEADER</label>
+				<input type="text" name="" id="submit_name" required>
+				<div class="underline"></div>
 			</div>
 			<div class="container">
-				<input type="email" name="" id="submit_mail" placeholder="TEAM LEADER EMAIL" required>
+				<label>TEAM LEADER EMAIL</label>
+				<input type="email" name="" id="submit_mail" required>
+				<div class="underline"></div>
 			</div>
 			<div class="container">
-				<input type="text" name="" id="submit_phone" placeholder="PHONE NUMBER" required>
+				<label>PHONE NUMBER</label>
+				<input type="text" name="" id="submit_phone" required>
+				<div class="underline"></div>
 			</div>
 			<input type="submit" value="START" id="start_test">
 		</form>
