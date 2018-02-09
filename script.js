@@ -35,15 +35,17 @@ function init()
   }
 
   list_icon.onclick = function() {
-    list.style.top = 0;
+    list.style.right = 0;
   };
   close_list.onclick = function() {
-    list.style.top = '100%';
+    list.style.right = '100%';
   };
 
   time = document.getElementsByClassName('time')[0];
+  time_bottom = document.getElementsByClassName('time')[1];
   time_bar = document.getElementsByClassName('time-bar')[0];
   time.innerHTML='00:00';
+  time_bottom.innerHTML='00:00';
   quiz_len = 60;
   window.onload = function() {
   	min = 0;
@@ -66,6 +68,7 @@ function init()
   		if(min.length<2)
   			min='0'+min;
   		time.innerHTML=min+':'+sec;
+      time_bottom.innerHTML=min+':'+sec;
   		sec=parseInt(sec);
   		min=parseInt(min);
 

@@ -64,6 +64,7 @@ html, body {
   background: #738EC6;
   padding: 4px;
   border-radius: 2px;
+  display: none;
 }
 #top .top-bar .title {
   font-weight: bold;
@@ -74,6 +75,13 @@ html, body {
   padding: 4px;
   border-radius: 2px;
 }
+#top .top-bar .list-icon {
+  background: #738EC6;
+  padding: 4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
 #container {
   width: 90%;
   box-sizing: border-box;
@@ -116,6 +124,7 @@ html, body {
   cursor: pointer;
   display: block;
   color: #fff;
+  margin: auto;
   width: 100%;
   padding: 10px 0 10px 0;
   background-color: #fff;
@@ -155,6 +164,18 @@ html, body {
   flex-grow: 1;
   text-align: center;
 }
+#bottom .time {
+  background: #566A93;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  height: 100%;
+  line-height: 30px;
+  vertical-align: middle;
+  /*padding-top: 9px;*/
+ /* padding: 4px;*/
+  border-radius: 2px;
+}
 #bottom .list-icon {
   text-align: center;
   flex-grow: 1;
@@ -168,7 +189,7 @@ html, body {
 #ques-list {
   padding-top: 10px;
   position: fixed;
-  top: 100%;
+  right: 0;
   min-height: 100%;
   width: 100%;
   background-color: #566A93;
@@ -299,5 +320,35 @@ html, body {
   }
   .reset_btn {
     margin-bottom: 15px;
+  }
+  #top .top-bar .title {
+    font-size: 1.6em
+  }
+  .question::before {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #7DA7FC;
+  }
+  .question {
+    font-size: 1.2em;
+    width: 75%;
+    text-align: justify;
+    margin: auto;
+  }
+  #top .top-bar .quit {
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  .options label {
+    width: 75%;
+  }
+  .skip, .prev, .next {
+    font-size: 1.2em;
+  }
+  #top .top-bar .time {
+    display: inline-block;
+  }
+  #top .top-bar .list-icon {
+    display: none;
   }
 }

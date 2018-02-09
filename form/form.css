@@ -25,7 +25,6 @@ body,html {
 	justify-content: center;
 	align-items: center;
 }
-
 /* start button */
 #start_test {
 	margin: auto;
@@ -40,6 +39,7 @@ body,html {
 	cursor:pointer;
 	height: 7vh;
 	width: 25vw;
+	margin-top: 2vh;
 	-webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
@@ -57,10 +57,10 @@ body,html {
 	min-width:50vw;
 	width: 100%;
 	height: 100vh;
-	display: flex;
+	/*display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 }
 
 .student_form .container { 
@@ -70,10 +70,10 @@ body,html {
 
 .student_form input {
 	/*font-size: 100vh;*/
-  border-radius: 10px;
+  border-radius: 6px;
   padding:10px 10px;
   display:block;
-  width:60vw;
+  width:55vw;
   height: 1.5vh;
   border:none;
   border:5px solid #fff;
@@ -83,12 +83,20 @@ body,html {
 }
 
 #details {
-	height: 90vh;
-	position: absolute;
-	top: 37vh;
+	height: 70vh;
+	/*position: absolute;
+	top: 22vh;*/
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 #details input {
+	border: #000 2px solid;
 	color: #000;
 	font-size: 3vh;
 }
@@ -106,7 +114,7 @@ body,html {
 	color: #566A93;
 	display: block;
 	margin-bottom: 2vh;
-	font-size: 4vh;
+	font-size: 0.7em;
 	position: relative;
 	text-decoration: none;
 	z-index: 1;
@@ -135,67 +143,32 @@ input[type='email']:focus ~ .underline {
 */
 
 .heading {
-	color: #566A93;
-	margin-bottom: 7vh;
-	font-size: 3.5vw;
-	margin-top: -5.3vh;
-	position: absolute;
-	top: 28vh;
+	color: #fff;
+	font-size: 2.9vh;
+	text-align: center;
+/*	margin-top: 2vh;*/
+	vertical-align: middle;
 }
 
 .reverse_engineering {
+	width: 100%;
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+	background: #566A93;
 	color: #fff;
-	margin-top: -2vh;
 	position: absolute;
-	top: 7vh;
+	top: 0vh;
+	left: 0vh;
 	font-size: 5.5vh;
-}
-
-
-
-
-@media all and (max-width: 10000px) and (min-width: 1500px) {
-	.heading {
-		font-size: 3.2vw;
-	}
-}
-
-@media all and (max-width: 1499px) and (min-width: 1130px) {
-	.heading {
-		font-size: 7vh;
-		top: 29vh;
-	}
-}
-
-@media all and (max-width: 1130px) and (min-width: 588px) {
-	.heading {
-		font-size: 6vh;
-		top: 29vh;
-	}
-}
-
-@media all and (max-width: 587px){
-	.reverse_engineering  {
-		font-size: 9vw;
-	}
-	.heading {
-		font-size: 7vw;
-		top: 43vw;
-	}
-	#details {
-		top: 52vw;
-	}
-	.student_form input {
-		width: 70vw;
-	}
-	#details label {
-		font-size: 5.3vw;
-	}
 }
 
 @media all and (device-width: 375px) {
 	.heading {
 		top: 22.5vh;
+	}
+	.reverse_engineering {
+		font-size: 1.2em;
 	}
 	#start_test:hover {
 		font-size: 3.3vh
